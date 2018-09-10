@@ -4,22 +4,22 @@ Building an informative summary from logs is a real task that comes up very ofte
 
 # Solution for Generate the Reports with Below Requirements
 
-**1. What are the most popular three articles of all time?**
-**2. Who are the most popular article authors of all time?**
-**3. On which days did more than 1% of requests lead to errors?**
+**1. What are the most popular three articles of all time?** <br />
+**2. Who are the most popular article authors of all time?** <br />
+**3. On which days did more than 1% of requests lead to errors?** <br />
 
 # Technologies
 
-**1. PSQL**
-**2. Python3**
-**3. Virtual Machine**
-**4. DB-API**
+**1. PSQL** <br />
+**2. Python3** <br />
+**3. Virtual Machine** <br />
+**4. DB-API** <br />
 
 # SETUP
 
-1. Install **vagrant**
-2. Install **Virtual Box**
-2. Download **newsdata.sql** 
+1. Install **vagrant** <br />
+2. Install **Virtual Box** <br />
+2. Download **newsdata.sql**  <br />
 
 #PSQL VIEW Query for Get the Error Percentage
 
