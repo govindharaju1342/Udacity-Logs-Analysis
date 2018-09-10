@@ -24,3 +24,9 @@ Building an informative summary from logs is a real task that comes up very ofte
 # PSQL VIEW Query for Get the Error Percentage
 
 CREATE VIEW errorsdetails AS SELECT TO_CHAR(time ::date, 'Mon dd, yyyy') AS date, COUNT(*) AS tot, COUNT( CASE WHEN (status != '200 OK') THEN 1 END) AS fail, ROUND((COUNT( CASE WHEN (status != '200 OK') THEN 1 END)::decimal / COUNT(*)::decimal) * 100::numeric, 2) AS per FROM log GROUP BY time ::date HAVING ((COUNT( CASE WHEN (status != '200 OK') THEN 1 END)::decimal / COUNT(*)::decimal) * 100) > 1  ORDER BY date;
+
+
+# RUN
+
+python reports.py
+
