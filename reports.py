@@ -35,7 +35,7 @@ errorQuestion = "3. On which days did more than 1% of requests lead to errors?"
 
 # Exceute the view query before select the errorsdetails
 # CREATE VIEW errorsdetails AS
-# select TO_CHAR(time ::date, 'Mon dd, yyyy') as date,
+# SELECT TO_CHAR(time ::date, 'Mon dd, yyyy') AS date,
 # COUNT(*) AS tot,
 # COUNT( CASE WHEN (status != '200 OK') THEN 1 END) AS fail,
 # ROUND((COUNT( CASE WHEN (status != '200 OK')
