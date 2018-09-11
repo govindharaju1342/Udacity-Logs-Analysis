@@ -58,24 +58,26 @@ def executeQuery(sql_query):   # Connect database and execute the query
 
 # Call the exceute function with query
 
+
 articlesResult = executeQuery(articlesQuery)
 authorsResult = executeQuery(authorsQuery)
 errorResult = executeQuery(errorQuery)
 
 
 def generatReports():   # Generat the reports
-    print ("\n")
+    print("\n")
     print(articlesQuestion)
     for title, views in articlesResult:
         print("   {} -- {} views".format(title, views))
-    print ("\n")
+    print("\n")
     print(authorsQuestion)
     for author, views in authorsResult:
         print("   {} -- {} views".format(author, views))
-    print ("\n")
+    print("\n")
     print(errorQuestion)
     for date, per in errorResult:
         print("   {} -- {}% errors".format(date, per))
-    print ("\n")
+    print("\n")
+
 
 generatReports()    # Call the generatReports function
